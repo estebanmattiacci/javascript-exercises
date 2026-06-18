@@ -1,6 +1,13 @@
 const palindromes = function (string) {
-  // Since we only consider letters and numbers, create a variable containing all valid characters
+  // Since we only consider letters and numbers, create a variable containing all valid characters.
+
   const alphanumerical = 'abcdefghijklmnopqrstuvwxyz0123456789';
+
+  // An alternative way to do this would be to use Regexp, which is a bit more advanced. See below
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+  // const regExp = RegExp("[a-zA-Z0-9]");
+  // then in the filter argument of the cleanedString variable, you would filter using regExp.test(character)
+
 
   // Convert to lowercase, split to array of individual characters, filter only valid characters, then rejoin as new string
   const cleanedString = string
